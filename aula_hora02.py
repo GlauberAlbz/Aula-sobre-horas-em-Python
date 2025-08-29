@@ -14,6 +14,14 @@ print(dia, mes, ano)
 print(50*("-"))
 '''
 
-data_user = int(input("Digite uma data (AAAA/MM/DD): "))
-data = dt.date(data_user)
-print(data)
+print(f"Digite a ata desejada.")
+dia = int(input("Dia: "))
+mes = int(input("Mês: "))
+ano = int(input("Ano: "))
+
+data = dt.date(day = dia, month=mes, year=ano)
+
+print(dia,mes,ano, sep="/")
+
+data_atual = dt.date.today()
+print(data_atual)
